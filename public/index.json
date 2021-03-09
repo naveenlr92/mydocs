@@ -7,6 +7,20 @@
 	"content": ""
 },
 {
+	"uri": "/posts/my-first-post/",
+	"title": "My First Post",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/posts/",
+	"title": "Posts",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "/basics/second-content/",
 	"title": "Second Content",
 	"tags": [],
