@@ -1,6 +1,6 @@
 # Change the default theme to be use when building the site with Hugo
 #
-baseURL = "/"
+baseURL = "https://naveenlr92.github.io/mydocs/"
 theme = "hugo-theme-learn"
 
 # For search functionality
