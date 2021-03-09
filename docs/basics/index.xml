@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Basics on </title>
-    <link>/basics/</link>
+    <link>//localhost:1313/basics/</link>
     <description>Recent content in Basics on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 09 Mar 2021 04:37:55 +0530</lastBuildDate><atom:link href="/basics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Mar 2021 04:37:55 +0530</lastBuildDate><atom:link href="//localhost:1313/basics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Content</title>
-      <link>/basics/first-content/</link>
+      <link>//localhost:1313/basics/first-content/</link>
       <pubDate>Tue, 09 Mar 2021 04:38:55 +0530</pubDate>
       
-      <guid>/basics/first-content/</guid>
+      <guid>//localhost:1313/basics/first-content/</guid>
       <description></description>
     </item>
     

@@ -1,41 +1,41 @@
 [
 {
-	"uri": "/",
+	"uri": "//localhost:1313/",
 	"title": "",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/basics/second-content/",
+	"uri": "//localhost:1313/basics/second-content/",
 	"title": "Second Content",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/basics/first-content/",
+	"uri": "//localhost:1313/basics/first-content/",
 	"title": "First Content",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/basics/",
+	"uri": "//localhost:1313/basics/",
 	"title": "Basics",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/categories/",
+	"uri": "//localhost:1313/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/tags/",
+	"uri": "//localhost:1313/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
