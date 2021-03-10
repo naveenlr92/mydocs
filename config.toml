@@ -1,8 +1,35 @@
 # Change the default theme to be use when building the site with Hugo
 #
-baseURL = "https://naveenlr92.github.io/mydocs/"
-theme = "hugo-theme-learn"
+#baseURL = "https://naveenlr92.github.io/mydocs/"
+baseURL = "/"
+languageCode = "en-US"
+defaultContentLanguage = "en"
 
-# For search functionality
+title = "Naveen Learn Documentation"
+theme = "hugo-theme-learn"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
+
+[params]
+#  editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
+  description = "Documentation by Naveen"
+  author = "Naveen L.R"
+  themeVariant = "green"
+  showVisitedLinks = true
+  disableBreadcrumb = false
+  disableNextPrev = false
+  disableLandingPageButton = false
+  disableMermaid = false
+  customMermaidURL = "https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"
+  titleSeparator = "::"
+
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+
+[Languages]
+[Languages.en]
+title = "Documentation by Naveen"
+weight = 1
+languageName = "English"
+landingPageURL = "/en"
+landingPageName = "<i class='fas fa-home'></i> Home"
