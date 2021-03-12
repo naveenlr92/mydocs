@@ -1,7 +1,7 @@
 # Change the default theme to be use when building the site with Hugo
 #
-#baseURL = "https://naveenlr92.github.io/mydocs/"
-baseURL = "/"
+baseURL = "https://naveenlr92.github.io/mydocs/"
+#baseURL = "/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 

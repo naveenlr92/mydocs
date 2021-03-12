@@ -9,5 +9,5 @@ title: "Learn Documentation"
 
 #### This document gives
 
-* **GIT Tutorial**
+* [**GIT Tutorial**]({{%relref "/content/git/_index.md#" %}})
 * **Bash scripting**
