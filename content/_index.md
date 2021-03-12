@@ -11,3 +11,5 @@ title: "Learn Documentation"
 
 * [**GIT Tutorial**]({{%relref "/content/git/_index.md#" %}})
 * **Bash scripting**
+
+* [**GIT Tutorial**]({{%relref "https://naveenlr92.github.io/mydocs/git/_index.md#" %}})
