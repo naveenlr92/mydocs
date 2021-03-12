@@ -33,5 +33,5 @@ home = [ "HTML", "RSS", "JSON"]
 title = "Documentation by Naveen"
 weight = 1
 languageName = "English"
-landingPageURL = "/mydocs/"
+landingPageURL = "/"
 landingPageName = "<i class='fas fa-home'></i> Home"
