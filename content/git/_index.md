@@ -1,6 +1,6 @@
 ---
 title: Git
-weight: 5
+weight: 1
 chapter: true
 ---
 

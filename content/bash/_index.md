@@ -1,6 +1,6 @@
 ---
 title: Bash Script
-weight: 5
+weight: 2
 chapter: true
 ---
 
