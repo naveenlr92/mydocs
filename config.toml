@@ -22,6 +22,7 @@ defaultContentLanguageInSubdir= true
   disableMermaid = false
   customMermaidURL = "https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"
   titleSeparator = "::"
+  canonifyurls = true
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
@@ -31,5 +32,5 @@ home = [ "HTML", "RSS", "JSON"]
 title = "Documentation by Naveen"
 weight = 1
 languageName = "English"
-landingPageURL = "https://naveenlr92.github.io/mydocs/"
+landingPageURL = "/mydocs/"
 landingPageName = "<i class='fas fa-home'></i> Home"
