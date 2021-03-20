@@ -10,3 +10,7 @@ chapter: true
 
 Bash Script basics we start from here.
 
+
+
+* [**Bash Script Exaples**]({{%relref "bash-scripts-examples" %}})
+
