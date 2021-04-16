@@ -11,3 +11,5 @@ chapter: true
 GIT basics we start from here.
 
 
+* [**GIt Basic COmmands**]({{%relref "/git/git-basic-commands/_index.md" %}})
+
