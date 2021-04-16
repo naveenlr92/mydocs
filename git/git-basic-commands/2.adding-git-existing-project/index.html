@@ -1,0 +1,140 @@
+<!doctype html><html lang=en class="js csstransforms3d"><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.82.0"><meta name=description content="Documentation by Naveen"><meta name=author content="Naveen L.R"><link rel=icon href=../../../images/favicon.png type=image/png><title>Add git to an Existing Project :: Documentation by Naveen</title><link href=../../../css/nucleus.css?1618559269 rel=stylesheet><link href=../../../css/fontawesome-all.min.css?1618559269 rel=stylesheet><link href=../../../css/hybrid.css?1618559269 rel=stylesheet><link href=../../../css/featherlight.min.css?1618559269 rel=stylesheet><link href=../../../css/perfect-scrollbar.min.css?1618559269 rel=stylesheet><link href=../../../css/auto-complete.css?1618559269 rel=stylesheet><link href=../../../css/atom-one-dark-reasonable.css?1618559269 rel=stylesheet><link href=../../../css/theme.css?1618559269 rel=stylesheet><link href=../../../css/hugo-theme.css?1618559269 rel=stylesheet><link href=../../../css/theme-green.css?1618559269 rel=stylesheet><script src=../../../js/jquery-3.3.1.min.js?1618559269></script><style>:root #header+#content>#left>#rlblock_left{display:none!important}</style></head><body data-url=../../../git/git-basic-commands/2.adding-git-existing-project/><nav id=sidebar class=showVisitedLinks><div id=header-wrapper><div id=header><a id=logo href=../../../><svg id="grav-logo" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 285.1 69.9"><g><path d="M35 0c9.6.0 17.9 3.4 24.7 10.3C66.5 17.1 70 25.3 70 35s-3.4 17.9-10.3 24.7C52.9 66.5 44.7 70 35 70c-9.7.0-17.9-3.4-24.7-10.3C3.4 52.8.0 44.6.0 34.9.0 25.3 3.4 17 10.3 10.2 17.1 3.4 25.3.0 35 0zM22.3 63.7c.3-7.4.3-14.7.0-22.1-2.1-.4-4-.4-5.9.0-.2.8-.2 2.5-.1 4.9.1 2.3.0 3.9-.3 4.8-1.7-.6-2.7-2.1-3.1-4.6-.1-.7-.1-3.3-.1-8 0-14.5-.1-23-.3-25.6-3.6 4.1-5.6 7-5.9 8.5v10.9c0 4.5.1 8.1.2 10.9.0.4.0 1.3-.1 2.8-.1 1.2.0 2.1.1 2.6.1.6 1.1 2.1 2.8 4.7C13.2 58.7 17.5 62.2 22.3 63.7zm22.3 1.7c.3-5 .2-12.9-.1-23.6-2.1-.3-4.1-.3-5.9.0-.2 2-.2 5.1-.1 9.5.1 4.3.0 7.5-.1 9.5-2.9.4-5 .3-6.2-.1-.2-5.6-.2-15.2-.1-28.7.1-12.4.0-21.8-.3-28.3-2.4.1-4.3.6-5.7 1.3-.1 7.7-.2 17.7-.1 30.1.0 16.5.0 26.6.0 30.3 2.3 1.1 5.4 1.7 9.4 1.7C38.9 66.9 42.1 66.4 44.6 65.4zM48.1 64.1c9.7-4.6 15.7-12 18-22.2-1.8-.2-3.8-.3-6.1-.3-1.6 3.9-2.6 6.3-3.2 7.2-1.1 1.7-2 2.5-2.7 2.5C54 46 54 39.1 54 30.5c0-11.5.0-18.4.0-20.9-1.4-1.4-3.3-2.5-5.7-3.4C48.1 6.3 48 6.4 48 6.7c0 3.5.0 13.1.0 28.8C47.9 47.2 48 56.8 48.1 64.1z"/></g><g><path d="M116.6 51.3h-29c-.5.0-.9-.1-1.3-.2-.4-.2-.7-.4-1-.7-.3-.3-.5-.6-.7-1s-.2-.8-.2-1.3V16.3h6.3V45h25.8v6.3z"/><path d="M154.8 51.3h-22.9c-.9.0-1.8-.2-2.9-.5-1-.3-2-.8-2.9-1.5s-1.6-1.6-2.2-2.8c-.6-1.1-.9-2.5-.9-4.2V19.5c0-.4.1-.9.2-1.2.2-.4.4-.7.7-1s.6-.5 1-.7.8-.2 1.3-.2h28.6v6.3h-25.4v19.8c0 .8.2 1.5.7 1.9s1.1.7 1.9.7h22.9v6.2zM151.9 37h-20v-6.4h20V37z"/><path d="M197.3 51.3H191v-8.6h-22.3v8.6h-6.3V33.8c0-2.6.4-4.9 1.3-7.1s2.1-4 3.7-5.5 3.4-2.8 5.5-3.6c2.1-.9 4.5-1.3 7-1.3h14.3c.4.0.9.1 1.2.2.4.2.7.4 1 .7s.5.6.7 1 .2.8.2 1.2V51.3zM168.7 36.4H191V22.6h-11.2c-.2.0-.6.0-1.2.1s-1.4.2-2.2.4c-.8.2-1.7.6-2.6 1-.9.5-1.8 1.1-2.5 2-.8.8-1.4 1.9-1.9 3.1-.5 1.2-.7 2.8-.7 4.5v2.7z"/><path d="M241.7 28.1c0 1.4-.2 2.7-.5 3.9-.4 1.1-.8 2.1-1.5 3-.6.9-1.3 1.6-2.1 2.2-.8.6-1.6 1.1-2.5 1.5s-1.8.7-2.6.9c-.9.2-1.7.3-2.5.3l13.3 11.5h-9.8l-13.2-11.5h-4.6v-6.3H230c.8-.1 1.5-.2 2.2-.5s1.2-.6 1.7-1.1.9-1 1.1-1.6c.3-.6.4-1.4.4-2.2v-4c0-.4.0-.6-.1-.8s-.2-.3-.3-.4c-.1-.1-.3-.1-.4-.2-.2.0-.3.0-.4.0h-20.9v28.7H207v-32c0-.4.1-.9.2-1.2.2-.4.4-.7.7-1 .3-.3.6-.5 1-.7s.8-.2 1.3-.2H234c1.4.0 2.6.3 3.6.8s1.8 1.2 2.4 1.9c.6.8 1 1.6 1.3 2.5s.4 1.7.4 2.5v4z"/><path d="M285.1 48.6c0 .5-.1.9-.3 1.3s-.4.7-.7 1-.6.5-1 .7-.8.2-1.2.2-.8-.1-1.2-.2-.8-.4-1.1-.7l-23.2-24.2v24.7h-6.3V19c0-.7.2-1.2.5-1.8.4-.5.8-.9 1.4-1.2.6-.2 1.2-.3 1.9-.2s1.2.4 1.6.9l23.2 24.2V16.3h6.3V48.6z"/></g></svg></a></div><div class=searchbox><label for=search-by><i class="fas fa-search"></i></label>
+<input data-search-input id=search-by type=search placeholder=Search...>
+<span data-search-clear><i class="fas fa-times"></i></span></div><script type=text/javascript src=../../../js/lunr.min.js?1618559269></script><script type=text/javascript src=../../../js/auto-complete.js?1618559269></script><script type=text/javascript>var baseurl="https://naveenlr92.github.io/"</script><script type=text/javascript src=../../../js/search.js?1618559269></script></div><section id=homelinks><ul><li><a class=padding href=../../../><i class="fas fa-home"></i> Home</a></li></ul></section><div class=highlightable><ul class=topics><li data-nav-id=/git/ title=Git class="dd-item
+parent"><a href=../../../git/>Git
+<i class="fas fa-check read-icon"></i></a><ul><li data-nav-id=/git/git-basic-commands/ title="Git basic commands" class="dd-item
+parent"><a href=../../../git/git-basic-commands/>Git basic commands
+<i class="fas fa-check read-icon"></i></a><ul><li data-nav-id=/git/git-basic-commands/2.adding-git-existing-project/ title="Add git to an Existing Project" class="dd-item active"><a href=../../../git/git-basic-commands/2.adding-git-existing-project/>Add git to an Existing Project
+<i class="fas fa-check read-icon"></i></a></li><li data-nav-id=/git/git-basic-commands/1.starting-from-fresh-project/ title="starting from fresh project" class=dd-item><a href=../../../git/git-basic-commands/1.starting-from-fresh-project/>starting from fresh project
+<i class="fas fa-check read-icon"></i></a></li></ul></li></ul></li><li data-nav-id=/bash/ title="Bash Script" class=dd-item><a href=../../../bash/>Bash Script
+<i class="fas fa-check read-icon"></i></a><ul><li data-nav-id=/bash/bash-scripts-examples/ title="Bash Script Exaples" class=dd-item><a href=../../../bash/bash-scripts-examples/>Bash Script Exaples
+<i class="fas fa-check read-icon"></i></a><ul><li data-nav-id=/bash/bash-scripts-examples/1.-read_data_from_text_files/ title="read data from text files" class=dd-item><a href=../../../bash/bash-scripts-examples/1.-read_data_from_text_files/>read data from text files
+<i class="fas fa-check read-icon"></i></a></li></ul></li></ul></li><li data-nav-id=/posts/ title=Posts class=dd-item><a href=../../../posts/>Posts
+<i class="fas fa-check read-icon"></i></a><ul><li data-nav-id=/posts/my-first-post/ title="My First Post" class=dd-item><a href=../../../posts/my-first-post/>My First Post
+<i class="fas fa-check read-icon"></i></a></li></ul></li></ul><section id=prefooter><hr><ul><li><a class=padding href=# data-clear-history-toggle><i class="fas fa-history fa-fw"></i> Clear History</a></li></ul></section><section id=footer><p>Built with <a href=https://github.com/matcornic/hugo-theme-learn><i class="fas fa-heart"></i></a> from <a href=https://getgrav.org>Grav</a> and <a href=https://gohugo.io/>Hugo</a></p></section></div></nav><section id=body><div id=overlay></div><div class="padding highlightable"><div><div id=top-bar><div id=breadcrumbs itemscope itemtype=http://data-vocabulary.org/Breadcrumb><span id=sidebar-toggle-span><a href=# id=sidebar-toggle data-sidebar-toggle><i class="fas fa-bars"></i></a></span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<span class=links><a href=../../../>Learn Documentation</a> > <a href=../../../git/>Git</a> > <a href=../../../git/git-basic-commands/>Git basic commands</a> > Add git to an Existing Project</span></div><div class=progress><div class=wrapper><nav id=TableOfContents><ul><li><ul><li></li></ul></li></ul></nav></div></div></div></div><div id=head-tags></div><div id=body-inner><h1>Add git to an Existing Project</h1><h4 id=add-git-to-an-existing-project>Add git to an Existing Project</h4><p>Goto <a href=http://www.initializr.com/>http://www.initializr.com/</a> for download the web project</p><p>Click bootstrap, select all optional requrements and download it.</p><p>It will give the zip format content. extract it into the same directory</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>└──╼ $unzip Downloads/initializr-verekia-4.0.zip 
+Archive:  Downloads/initializr-verekia-4.0.zip
+  inflating: initializr/index.html   
+</code></pre></div><p>Rename the project</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>└──╼ $mv initializr web-project
+
+└──╼ $cd web-project/
+
+└──╼ $ls
+404.html  apple-touch-icon.png  browserconfig.xml  crossdomain.xml  css  favicon.ico  fonts  humans.txt  img  index.html  js  robots.txt  tile.png  tile-wide.png
+</code></pre></div><p>Add the git source control</p><p>Initialize git into my project directory</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>└──╼ $git init
+Initialized empty Git repository in /home/redhat/web-project/.git/
+
+└──╼ $ls -a
+.   404.html              browserconfig.xml  css          fonts  .htaccess   img         js          tile.png
+..  apple-touch-icon.png  crossdomain.xml    favicon.ico  .git   humans.txt  index.html  robots.txt  tile-wide.png
+</code></pre></div><p>We can see the .git directory created.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>└──╼ $git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  <span style=color:#f92672>(</span>use <span style=color:#e6db74>&#34;git add &lt;file&gt;...&#34;</span> to include in what will be committed<span style=color:#f92672>)</span>
+
+	.htaccess
+	404.html
+	apple-touch-icon.png
+	browserconfig.xml
+	crossdomain.xml
+	css/
+	favicon.ico
+	fonts/
+	humans.txt
+	index.html
+	js/
+	robots.txt
+	tile-wide.png
+	tile.png
+
+nothing added to commit but untracked files present <span style=color:#f92672>(</span>use <span style=color:#e6db74>&#34;git add&#34;</span> to track<span style=color:#f92672>)</span>
+</code></pre></div><p>Now git status command remain us to we are in the master branch</p><p>Git notice a bunch of file which is not trakked yet</p><p>Need to add all files into git staging area</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>└──╼ $git add .
+
+└──╼ $git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  <span style=color:#f92672>(</span>use <span style=color:#e6db74>&#34;git rm --cached &lt;file&gt;...&#34;</span> to unstage<span style=color:#f92672>)</span>
+
+	new file:   .htaccess
+	new file:   404.html
+	new file:   apple-touch-icon.png
+	new file:   browserconfig.xml
+	new file:   crossdomain.xml
+	new file:   css/bootstrap-theme.css
+	new file:   css/bootstrap-theme.css.map
+	new file:   css/bootstrap-theme.min.css
+	new file:   css/bootstrap.css
+	new file:   css/bootstrap.css.map
+	new file:   css/bootstrap.min.css
+	new file:   css/main.css
+	new file:   favicon.ico
+	new file:   fonts/glyphicons-halflings-regular.eot
+	new file:   fonts/glyphicons-halflings-regular.svg
+	new file:   fonts/glyphicons-halflings-regular.ttf
+	new file:   fonts/glyphicons-halflings-regular.woff
+	new file:   humans.txt
+	new file:   index.html
+	new file:   js/main.js
+	new file:   js/plugins.js
+	new file:   js/vendor/bootstrap.js
+	new file:   js/vendor/bootstrap.min.js
+	new file:   js/vendor/jquery-1.11.2.min.js
+	new file:   js/vendor/modernizr-2.8.3-respond-1.4.2.min.js
+	new file:   js/vendor/npm.js
+	new file:   robots.txt
+	new file:   tile-wide.png
+	new file:   tile.png
+</code></pre></div><p>All files added into the git index (staging area)</p><p>git commit</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>└──╼ $git commit -m <span style=color:#e6db74>&#34;My first commit, inline&#34;</span>
+<span style=color:#f92672>[</span>master <span style=color:#f92672>(</span>root-commit<span style=color:#f92672>)</span> 57d5b87<span style=color:#f92672>]</span> My first commit, inline
+ <span style=color:#ae81ff>29</span> files changed, <span style=color:#ae81ff>10594</span> insertions<span style=color:#f92672>(</span>+<span style=color:#f92672>)</span>
+ create mode <span style=color:#ae81ff>100644</span> .htaccess
+ create mode <span style=color:#ae81ff>100644</span> 404.html
+ create mode <span style=color:#ae81ff>100644</span> apple-touch-icon.png
+ create mode <span style=color:#ae81ff>100644</span> browserconfig.xml
+ create mode <span style=color:#ae81ff>100644</span> crossdomain.xml
+ create mode <span style=color:#ae81ff>100644</span> css/bootstrap-theme.css
+ create mode <span style=color:#ae81ff>100644</span> css/bootstrap-theme.css.map
+ create mode <span style=color:#ae81ff>100644</span> css/bootstrap-theme.min.css
+ create mode <span style=color:#ae81ff>100644</span> css/bootstrap.css
+ create mode <span style=color:#ae81ff>100644</span> css/bootstrap.css.map
+ create mode <span style=color:#ae81ff>100644</span> css/bootstrap.min.css
+ create mode <span style=color:#ae81ff>100644</span> css/main.css
+ create mode <span style=color:#ae81ff>100644</span> favicon.ico
+ create mode <span style=color:#ae81ff>100644</span> fonts/glyphicons-halflings-regular.eot
+ create mode <span style=color:#ae81ff>100644</span> fonts/glyphicons-halflings-regular.svg
+ create mode <span style=color:#ae81ff>100644</span> fonts/glyphicons-halflings-regular.ttf
+ create mode <span style=color:#ae81ff>100644</span> fonts/glyphicons-halflings-regular.woff
+ create mode <span style=color:#ae81ff>100644</span> humans.txt
+ create mode <span style=color:#ae81ff>100644</span> index.html
+ create mode <span style=color:#ae81ff>100644</span> js/main.js
+ create mode <span style=color:#ae81ff>100644</span> js/plugins.js
+ create mode <span style=color:#ae81ff>100644</span> js/vendor/bootstrap.js
+ create mode <span style=color:#ae81ff>100644</span> js/vendor/bootstrap.min.js
+ create mode <span style=color:#ae81ff>100644</span> js/vendor/jquery-1.11.2.min.js
+ create mode <span style=color:#ae81ff>100644</span> js/vendor/modernizr-2.8.3-respond-1.4.2.min.js
+ create mode <span style=color:#ae81ff>100644</span> js/vendor/npm.js
+ create mode <span style=color:#ae81ff>100644</span> robots.txt
+ create mode <span style=color:#ae81ff>100644</span> tile-wide.png
+ create mode <span style=color:#ae81ff>100644</span> tile.png
+
+
+└──╼ $git status
+On branch master
+nothing to commit, working tree clean
+</code></pre></div><p>this project managed by git</p><p>if we remove .git directory , it will no longer managed by git</p><p>for example</p><p>will remove the .git directory</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>└──╼ $ls -a
+.   404.html              browserconfig.xml  css          fonts  .htaccess   img         js          tile.png
+..  apple-touch-icon.png  crossdomain.xml    favicon.ico  .git   humans.txt  index.html  robots.txt  tile-wide.png
+
+└──╼ $rm -rf .git/
+
+└──╼ $git status
+fatal: not a git repository <span style=color:#f92672>(</span>or any of the parent directories<span style=color:#f92672>)</span>: .git
+</code></pre></div><p>last command says there is no git repository</p><footer class=footline></footer></div></div><div id=navigation><a class="nav nav-prev" href=../../../git/git-basic-commands/ title="Git basic commands"><i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=../../../git/git-basic-commands/1.starting-from-fresh-project/ title="starting from fresh project" style=margin-right:0><i class="fa fa-chevron-right"></i></a></div></section><div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px><div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div></div><script src=../../../js/clipboard.min.js?1618559269></script><script src=../../../js/perfect-scrollbar.min.js?1618559269></script><script src=../../../js/perfect-scrollbar.jquery.min.js?1618559269></script><script src=../../../js/jquery.sticky.js?1618559269></script><script src=../../../js/featherlight.min.js?1618559269></script><script src=../../../js/highlight.pack.js?1618559269></script><script>hljs.initHighlightingOnLoad()</script><script src=../../../js/modernizr.custom-3.6.0.js?1618559269></script><script src=../../../js/learn.js?1618559269></script><script src=../../../js/hugo-learn.js?1618559269></script><script src=../../../mermaid/mermaid.js?1618559269></script><script>mermaid.initialize({startOnLoad:!0})</script></body></html>
