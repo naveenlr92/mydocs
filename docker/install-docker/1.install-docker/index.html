@@ -6,7 +6,7 @@
 <meta name=description content="Documentation by Naveen">
 <meta name=author content="Naveen L.R">
 <link rel=icon href=../../../images/favicon.png type=image/png>
-<title>Add remote repo from github :: Documentation by Naveen</title>
+<title>Installtion process :: Documentation by Naveen</title>
 <link href=../../../css/nucleus.css?1638814102 rel=stylesheet>
 <link href=../../../css/fontawesome-all.min.css?1638814102 rel=stylesheet>
 <link href=../../../css/hybrid.css?1638814102 rel=stylesheet>
@@ -20,7 +20,7 @@
 <script src=../../../js/jquery-3.3.1.min.js?1638814102></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=../../../git/git-basic-commands/3.starting-github-remote-project/>
+<body data-url=../../../docker/install-docker/1.install-docker/>
 <nav id=sidebar class=showVisitedLinks>
 <div id=header-wrapper>
 <div id=header>
@@ -46,19 +46,21 @@
 </section>
 <div class=highlightable>
 <ul class=topics>
-<li data-nav-id=/docker/ title=Docker class=dd-item>
+<li data-nav-id=/docker/ title=Docker class="dd-item
+parent">
 <a href=../../../docker/>
 Docker
 <i class="fas fa-check read-icon"></i>
 </a>
 <ul>
-<li data-nav-id=/docker/install-docker/ title="Docker Installation" class=dd-item>
+<li data-nav-id=/docker/install-docker/ title="Docker Installation" class="dd-item
+parent">
 <a href=../../../docker/install-docker/>
 Docker Installation
 <i class="fas fa-check read-icon"></i>
 </a>
 <ul>
-<li data-nav-id=/docker/install-docker/1.install-docker/ title="Installtion process" class=dd-item>
+<li data-nav-id=/docker/install-docker/1.install-docker/ title="Installtion process" class="dd-item active">
 <a href=../../../docker/install-docker/1.install-docker/>
 Installtion process
 <i class="fas fa-check read-icon"></i>
@@ -68,15 +70,13 @@ Installtion process
 </li>
 </ul>
 </li>
-<li data-nav-id=/git/ title=Git class="dd-item
-parent">
+<li data-nav-id=/git/ title=Git class=dd-item>
 <a href=../../../git/>
 Git
 <i class="fas fa-check read-icon"></i>
 </a>
 <ul>
-<li data-nav-id=/git/git-basic-commands/ title="Git basic commands" class="dd-item
-parent">
+<li data-nav-id=/git/git-basic-commands/ title="Git basic commands" class=dd-item>
 <a href=../../../git/git-basic-commands/>
 Git basic commands
 <i class="fas fa-check read-icon"></i>
@@ -88,7 +88,7 @@ Add git to an Existing Project
 <i class="fas fa-check read-icon"></i>
 </a>
 </li>
-<li data-nav-id=/git/git-basic-commands/3.starting-github-remote-project/ title="Add remote repo from github" class="dd-item active">
+<li data-nav-id=/git/git-basic-commands/3.starting-github-remote-project/ title="Add remote repo from github" class=dd-item>
 <a href=../../../git/git-basic-commands/3.starting-github-remote-project/>
 Add remote repo from github
 <i class="fas fa-check read-icon"></i>
@@ -171,14 +171,18 @@ My First Post
 </span>
 <span id=toc-menu><i class="fas fa-list-alt"></i></span>
 <span class=links>
-<a href=../../../>Learn Documentation</a> > <a href=../../../git/>Git</a> > <a href=../../../git/git-basic-commands/>Git basic commands</a> > Add remote repo from github
+<a href=../../../>Learn Documentation</a> > <a href=../../../docker/>Docker</a> > <a href=../../../docker/install-docker/>Docker Installation</a> > Installtion process
 </span>
 </div>
 <div class=progress>
 <div class=wrapper>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#starting-on-github-by-joining-an-existing-project-git-clone>Starting on Github by Joining an Existing Project (git clone)</a></li>
+<li>
+<ul>
+<li><a href=#install-using-the-repository>Install using the repository</a></li>
+</ul>
+</li>
 </ul>
 </nav>
 </div>
@@ -189,46 +193,55 @@ My First Post
 </div>
 <div id=body-inner>
 <h1>
-Add remote repo from github
+Installtion process
 </h1>
-<h2 id=starting-on-github-by-joining-an-existing-project-git-clone>Starting on Github by Joining an Existing Project (git clone)</h2>
-<p>Fork and clone the remote project from git repository</p>
-<p>login the github by below url (sample web project)</p>
-<p><a href=https://github.com/scm-ninja/starter-web>https://github.com/scm-ninja/starter-web</a></p>
-<p>fork the web project into your github repository</p>
-<p>clone the link</p>
-<p><img src="../../../images/clone-github-example.png?width=20pc" alt=inputfile></p>
-<p>on the terminal , create the project directory and clone the remote repository</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>└──╼ $mkdir projects
-└──╼ $cd projects/
-└──╼ $git clone git@github.com:naveenlr92/starter-web.git
-</code></pre></div><p>check the link with your github user name</p>
-<p>goto the project directory</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>└──╼ $ls
-starter-web
-└──╼ $cd starter-web/
-</code></pre></div><p>check the files inside the directory</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>└──╼ $ls -a
-.   404.html                          crossdomain.xml  favicon.ico  .git       humans.txt  js         robots.txt
-..  apple-touch-icon-precomposed.png  css              fonts        .htaccess  index.html  README.md  simple.html
-</code></pre></div><p>we can see the .git directory created and places in git repository</p>
-<p>check the with git status command</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>└──╼ $git status
-On branch master
-Your branch is up to date with <span style=color:#e6db74>&#39;origin/master&#39;</span>.
-
-nothing to commit, working tree clean
-</code></pre></div><p><strong>On branch master</strong> &ndash; we are in the master branch</p>
-<p>Your branch is up to date with <strong>&lsquo;origin/master&rsquo;.</strong> &ndash; this line is new from previous examples</p>
-<p><strong>origin</strong> &ndash; remote repository (remote reference)
-<strong>master</strong> &ndash; master branch of remote repository</p>
+<h3 id=install-using-the-repository>Install using the repository</h3>
+<p>Before you install Docker Engine for the first time on a new host machine, you need
+to set up the Docker repository. Afterward, you can install and update Docker
+from the repository.</p>
+<h4 id=set-up-the-repository>Set up the repository</h4>
+<p>{% assign download-url-base = &ldquo;<a href=https://download.docker.com/linux/ubuntu%22>https://download.docker.com/linux/ubuntu"</a> %}</p>
+<ol>
+<li>
+<p>Update the <code>apt</code> package index and install packages to allow <code>apt</code> to use a
+repository over HTTPS:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-console data-lang=console>$ sudo apt-get update
+<span style=color:#960050;background-color:#1e0010>
+</span><span style=color:#960050;background-color:#1e0010></span>$ sudo apt-get install <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+</code></pre></div></li>
+<li>
+<p>Add Docker&rsquo;s official GPG key:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-console data-lang=console>$ curl -fsSL <span style=color:#f92672>{{</span> download-url-base <span style=color:#f92672>}}</span>/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+</code></pre></div></li>
+<li>
+<p>Use the following command to set up the <strong>stable</strong> repository. To add the
+<strong>nightly</strong> or <strong>test</strong> repository, add the word <code>nightly</code> or <code>test</code> (or both)
+after the word <code>stable</code> in the commands below. <a href=index.md>Learn about <strong>nightly</strong> and <strong>test</strong> channels</a>.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-console data-lang=console>$ echo <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>  &#34;deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] {{ download-url-base }} \
+  $(lsb_release -cs) stable&#34; | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
+</code></pre></div></li>
+</ol>
+<h4 id=install-docker-engine>Install Docker Engine</h4>
+<ol>
+<li>
+<p>Update the <code>apt</code> package index, and install the <em>latest version</em> of Docker
+Engine and containerd, or go to the next step to install a specific version:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-console data-lang=console>$ sudo apt-get update
+$ sudo apt-get install docker-ce docker-ce-cli containerd.io
+</code></pre></div></li>
+</ol>
 <footer class=footline>
 </footer>
 </div>
 </div>
 <div id=navigation>
-<a class="nav nav-prev" href=../../../git/git-basic-commands/2.adding-git-existing-project/ title="Add git to an Existing Project"> <i class="fa fa-chevron-left"></i></a>
-<a class="nav nav-next" href=../../../git/git-basic-commands/4.basic-git-workflow/ title="Basic Git Workflow" style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=../../../docker/install-docker/ title="Docker Installation"> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=../../../git/ title=Git style=margin-right:0><i class="fa fa-chevron-right"></i></a>
 </div>
 </section>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
